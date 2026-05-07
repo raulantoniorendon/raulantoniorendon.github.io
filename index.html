@@ -282,12 +282,12 @@
   #about { padding: 0 0 5rem; }
   .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 320px) 1fr;
     gap: 4rem;
     padding: 2.5rem 3rem 0;
     align-items: start;
   }
-  .about-photo-wrap { position: relative; }
+  .about-photo-wrap { position: relative; max-width: 320px; }
   .about-photo {
     width: 100%;
     aspect-ratio: 3/4;
